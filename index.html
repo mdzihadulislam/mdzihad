@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,81 +8,76 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #222;
-      padding: 10px 20px;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar-logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .navbar-toggle {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
-    }
-    .navbar-menu {
-      display: flex;
-      list-style: none;
-      gap: 15px;
-    }
-    .navbar-menu li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    @media (max-width: 768px) {
-      .navbar-toggle {
-        display: block;
-      }
-      .navbar-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 20px;
-        top: 60px;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      .navbar-menu.show {
-        display: flex;
-      }
-      .navbar-menu li {
-        margin-bottom: 10px;
-      }
-    }
+    }.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    /* Responsive header layout */
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    header img {
-      flex: 1 1 300px;
-      max-width: 350px;
-      border-radius: 10px;
-    }
-    header .intro {
-      flex: 2 1 400px;
-      text-align: left;
-    }
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    margin-bottom: 10px;
+  }
+}
+
+.boxed-image {
+  border: 2px solid black;
+  padding: 5px;
+  width: 350px;
+  border-radius: 8px;
+}
+
   </style>
 </head>
-<body>
-  <nav class="navbar">
+<body>  <nav class="navbar">
     <div class="navbar-logo">Home</div>
     <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
     <ul class="navbar-menu" id="navbarMenu">
@@ -93,40 +87,40 @@
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </nav>  <header id="home">
+           
 
-  <header id="home">
-    <img src="WhatsApp Image 2025-12-17 at 12.04.58 PM.jpeg" alt="Profile Picture"/>
-    <div class="intro">
-      <h1>Md Zihadul Islam</h1>
-      <p>Robotics & IoT Enthusiast</p>
-    </div>
-  </header>
-
-  <section>
+     <img src="WhatsApp Image 2025-12-17 at 12.04.58 PM.jpeg" alt="Profile Picture" style="width:100%;max-width:600px;height:auto;border-radius:10px;"/>
+    <h1>Md Zihadul Islam</h1>
+     
+    <p>Robotics & IoT Enthusiast</p>
+ </div>
+  </header>  <section>
     <h2>About Me</h2>
     <p>I am a dedicated and curious student passionate about innovation and solving practical problems. Working with electrical devices and systems gives me great satisfaction. I enjoy understanding how things work, taking systems apart, and creating new solutions to real-world challenges.
     Since childhood, I have participated in various science Olympiads like Physics, Math, and IT. Though I enjoy these intellectual challenges, my true passion is robotics, electronics, and technology innovation. I have completed several IT and IoT projects, always seeking ways to improve efficiency and quality of life.
     What drives me most is creating something new—whether designing smart sensor systems, automating processes with Arduino, or solving robotics challenges. I love soldering wires, coding circuits, and working late—not out of duty, but genuine interest.
     My goal is to become a multidisciplinary engineer who applies theory effectively to make a positive impact. I am committed to continuous learning and inspiring others to innovate with me.</p>
-  </section>
-
-  <section id="projects">
+  </section>  <section id="projects">
     <h2 style="color:black;">Projects</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; text-align: center;">
-      <div>
-        <h3>Humanoid Medical Robot-71</h3>
-        <img src="MedicalRobot.jpg" alt="MedicalRobot" width="350" height="400"/>
-        <p>This is a Humanoid Medical Robot-71,<br>specifically designed to deliver healthcare services to patients<br>autonomously, without the direct involvement of a doctor.</p>
-        <a href="https://youtu.be/oVUG3B_AB6I?si=DJuMH4Zz1csJnQAp" target="_blank">Watch Video 🔗</a>
-      </div>
-      <div>
-        <h3>Alpha-21 Medical & Homey Robot</h3>
-        <img src="Alpharobot.jpg" alt="AlphaRobot" width="350" height="400"/>
-        <p>This is a Alpha-21 an artificial intelligence robot.<br>This artificial intelligence robot has been designed<br>to streamline various tasks in both the medical sector<br>and domestic environments.</p>
-        <a href="https://www.facebook.com/share/v/14EDrjV63UP/" target="_blank">Watch Video 🔗</a>
-      </div>
- </section>  <section id="presentation">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; text-align: center;"/>
+
+    <div>
+      <h3>Humanoid Medical Robot-71</h3>
+      <img src="MedicalRobot.jpg" alt="MedicalRobot" width="350" height="400"/>
+      <p>This is a Humanoid Medical Robot-71,<br>  specifically designed to deliver healthcare services to patients<br> autonomously, without the direct involvement of a doctor.
+</p>
+      <a href="https://youtu.be/oVUG3B_AB6I?si=DJuMH4Zz1csJnQAp" target="_blank">Watch Video 🔗</a>
+    </div>
+    <div>
+      <h3>Alpha-21 Medical & Homey Robot</h3>
+      <img src="Alpharobot.jpg" alt="AlphaRobot" width="350" height="400"/>
+      <p>This is a Alpha-21 an artificial intelligence robot.
+      <br>This artificial intelligence robot has been designed <br>to streamline various tasks
+      in both the medical sector<br> and domestic environments.</p>
+      <a href="https://www.facebook.com/share/v/14EDrjV63UP/" target="_blank">Watch Video 🔗</a>
+    </div>
+  </section>  <section id="presentation">
     <h2 style="color:black;">Presentation</h2>
     <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; text-align: center;">
 
